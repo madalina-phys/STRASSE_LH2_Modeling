@@ -1,0 +1,61 @@
+--- Liquid Hydrogen Density vs. Temperature ---
+Fit Parameters for poly (from highest order term): [-2.44398187e-03  1.10790064e-01 -2.58840598e+00  9.81502143e+01]
+Plot saved as liquid_hydrogen_density_vs._temperature.png
+
+--- Vapor Hydrogen Density vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 1.66393764e-04 -1.18030170e-02  3.38343049e-01 -4.35410388e+00
+  2.08082954e+01]
+Plot saved as vapor_hydrogen_density_vs._temperature.png
+
+--- Liquid Hydrogen Viscosity vs. Temperature ---
+Fit Parameters for poly (from highest order term): [-4.29608892e-09  3.43112703e-07 -9.75692114e-06  1.06001866e-04]
+Plot saved as liquid_hydrogen_viscosity_vs._temperature.png
+
+--- Vapor Hydrogen Viscosity vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 1.05984092e-11 -7.82973846e-10  2.17374955e-08 -2.13433478e-07
+  1.11788367e-06]
+Plot saved as vapor_hydrogen_viscosity_vs._temperature.png
+
+--- Liquid Hydrogen Specific Heat vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 9.98115256e-02 -1.00173729e+01  3.99420289e+02 -7.87179864e+03
+  7.68975462e+04 -2.91664049e+05]
+Plot saved as liquid_hydrogen_specific_heat_vs._temperature.png
+
+--- Vapor Hydrogen Specific Heat vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 1.48484086e-01 -1.49676287e+01  6.00385831e+02 -1.19278080e+04
+  1.17274475e+05 -4.45892740e+05]
+Plot saved as vapor_hydrogen_specific_heat_vs._temperature.png
+
+--- Liquid Hydrogen Thermal Conductivity vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 1.45240215e-06 -2.89630453e-04  1.06463472e-02 -8.27115517e-03]
+Plot saved as liquid_hydrogen_thermal_conductivity_vs._temperature.png
+
+--- Vapor Hydrogen Thermal Conductivity vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 4.65642861e-07 -3.60230977e-05  1.06085737e-03 -1.29629405e-02
+  6.50492668e-02]
+Plot saved as vapor_hydrogen_thermal_conductivity_vs._temperature.png
+
+--- Hydrogen Saturation Pressure vs. Temperature ---
+Fit Parameters for poly (from highest order term): [ 7.24480785e-03 -9.50206160e-02  1.08001326e+02 -3.73158679e+03
+  4.52369927e+04 -1.90683817e+05]
+Plot saved as hydrogen_saturation_pressure_vs._temperature.png
+
+Generating plots as a function of Pressure...
+--- Hydrogen Saturation Temperature vs. Pressure ---
+Fit Parameters for log_poly (from highest order term): [ 0.34317799 -4.59895759 27.69524633]
+Plot saved as hydrogen_saturation_temperature_vs._pressure.png
+
+--- Hydrogen Latent Heat of Vaporization vs. Pressure ---
+Fit Parameters for poly (from highest order term): [ 2.23767861e-21 -9.78934270e-16  1.67304839e-10 -1.44046249e-05
+  5.09861609e-01  4.47589140e+05]
+Plot saved as hydrogen_latent_heat_of_vaporization_vs._pressure.png
+
+--- Liquid Hydrogen Density vs. Saturation Pressure ---
+Fit Parameters for poly (from highest order term): [ 3.20248140e-20 -1.19943904e-14  1.73266573e-09 -1.54640250e-04
+  7.78189864e+01]
+Plot saved as liquid_hydrogen_density_vs._saturation_pressure.png
+
+--- Vapor Hydrogen Density vs. Saturation Pressure ---
+Fit Parameters for poly (from highest order term): [-8.93922277e-12  1.37105669e-05  4.47154935e-02]
+Plot saved as vapor_hydrogen_density_vs._saturation_pressure.png
+
