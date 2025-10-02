@@ -19,7 +19,7 @@ void Plot_Dependencies()
 
     // Target Heat Load Range
     double q_min = 0.0;  // 10 W/m^2
-    double q_max = 50.0; // 200 W/m^2
+    double q_max = 5.0; // 200 W/m^2
     int q_steps = 10;
 
     // --- Create TGraph2D objects to store the results ---
@@ -33,7 +33,7 @@ void Plot_Dependencies()
 
     TGraph2D *gr_P3 = new TGraph2D();
     gr_P3->SetName("gr_P3");
-    gr_P3->SetTitle("P3 (Pa) vs. P_cond (Pa) and q_target (W/m^2);P_cond (Pa);q_target (W/m^2);P3 (Pa)");
+    gr_P3->SetTitle("P3 (Pa) vs. P_cond (Pa) and q_target (W/m^2);P_cond (Pa);q_target (W/m^2);P (W)");
 
     // --- Loop over parameters and run the solver ---
     int point_index = 0;

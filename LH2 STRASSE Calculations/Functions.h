@@ -239,9 +239,9 @@ void CalculatePressuresAndTemperatures(double P_cond, double T_cond, double q_tm
 
     P5 = P4 - friction_factor_v2 * y_return + rho_v * g * y_return; //pressure at the top of the return line [Pa]
     //T5 = T4;
-    T5 = (T4*2 / y_return + T6 / dx_supply_return) / (2/y_return + 1/dx_supply_return);
+    T5 = (T4*2 / y_return + T6 / dx_supply_return/2) / (2/y_return + 1/dx_supply_return/2);
 
-    P6 = P5 - friction_factor_v2 * dx_supply_return + rho_v/2 * pow(vel_v,2) * pow((1 - pow(D_pipe/D_condenser,2)),2)/2; //pressure at the condenser [Pa]
+    P6 = P5 - friction_factor_v2 * 2*dx_supply_return;// + rho_v/2 * pow(vel_v,2) * pow((1 - pow(D_pipe/D_condenser,2)),2)/2; //pressure at the condenser [Pa]
     T6 = T_cond;
 }
 
@@ -284,7 +284,7 @@ double FillingLevel(double q_tmp, double q_front_tmp, double q_th_tmp, double m_
 
 double LevelCondenser(double x){
     //Calculate the y level of the condenser based on the filling level in the target
-    double y = y_supply + x * H_condenser / D_target; //y level of the top of the condenser [m]
+    double y = y_supply + x * H_condenser / D_target/2+dMass; //y level of the top of the condenser [m]
     return y;
 }
 

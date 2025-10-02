@@ -18,9 +18,9 @@
 void Plot_Gradients()
 {
     // --- Define a single operating point ---
-    double p_cond_run = 101325; // ~1 atm
-    double q_target_run = 1.5;  // W/m^2
-    double q_th_run = 5.0;      // W/m^2
+    double p_cond_run = 101325;//21553;//101325; // ~1 atm
+    double q_target_run = 0.005*138;  // W/m^2
+    double q_th_run = 0.00*138;      // W/m^2
 
     std::cout << "\n======================================================\n";
     std::cout << "Running CryoSolver for a single point:\n";
@@ -30,7 +30,6 @@ void Plot_Gradients()
     // Call the solver. The debug flag is set to false to keep the output clean.
     // The final state is printed by CryoSolver at the end of the run.
     CryoSolver(p_cond_run, q_target_run, q_th_run, false);
-
     // After CryoSolver runs, the global variables (P1, T1, etc.) are updated.
     
     // --- Define the path length for each point in the loop ---
@@ -59,10 +58,10 @@ void Plot_Gradients()
 
     // --- Collect Pressure and Temperature data ---
     std::vector<double> pressures = {
-        P_cond, P1, P2, P2_th, P_x, P3_th, P3, P4, P5, P6
+        ::P_cond, P1, P2, P2_th, P_x, P3_th, P3, P4, P5, P6
     };
     std::vector<double> temperatures = {
-        T_cond, T1, T2, T2_th, T_x, T3_th, T3, T4, T5, T6
+        ::T_cond, T1, T2, T2_th, T_x, T3_th, T3, T4, T5, T6
     };
     std::vector<const char*> point_labels = {
         "Cond. Out", "Supply Bot.", "Supply End", "Targ. In", "L/V Iface", "Targ. Out", "Return Start", "Return Bot.", "Return Top", "Cond. In"

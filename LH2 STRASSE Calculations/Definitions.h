@@ -56,7 +56,8 @@ double friction_factor_v = 0; //friction factor for vapor phase
 double friction_factor_v2 = 0; //friction factor for vapor phase
 double vel_l, vel_v, vel_v2; //velocity of liquid and vapor phase in the pipe [m/s] l= liq, v=vap, v2 = vap cold
 double vap_percentage = 0.1; //percentage of vapor in the mass flow rate [0-1]
-double factor_boiling_pressure = 0.00;
+double factor_boiling_pressure = 0;//0.0012;
+double dMass = -0.05;
 
 double T1,P1; //temperature and pressure at the bottom of the supply line [K],[Pa]
 double T2,P2; //temperature and pressure at the end of the supply line [K],[Pa]

@@ -1,8 +1,9 @@
 #include "Definitions.h"
 #include "Functions.h"
 
-void CryoSolver(double P_cond, double q_target, double q_th, bool debug = false)
+void CryoSolver(double P_cond_tmp, double q_target, double q_th, bool debug = false)  
 {
+    P_cond = P_cond_tmp; //condensation pressure [Pa]
     T_cond = SaturationTemperature(P_cond); //update condensation temperature based on condensation pressure
     A_target = L_target * D_target * TMath::Pi(); //total area surrounding the target [m^2]
 
